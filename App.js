@@ -88,6 +88,8 @@ const AppContent = () => {
         setShowTimer(true); // Show the timer for recording
         setShowSoundButton(false); // Hide the sound button while recording
         saveRecordingStartTime(); // Save recording start time to database
+        // Reset recording time when starting a new recording
+        setRecordingTime(0);
       } catch (error) {
         console.error('Failed to start recording:', error);
       }
@@ -95,6 +97,8 @@ const AppContent = () => {
       stopRecording();
     }
   };
+  
+  
 
   const stopRecording = async () => {
     setRecording(false);
@@ -168,7 +172,7 @@ const AppContent = () => {
 
   return (
     <View style={Styles.container}>
-      <Text style={Styles.title}>Sound Bar</Text>
+      <Text style={Styles.title}>Sound Board App</Text>
 
       <View style={Styles.buttonContainer}>
         {predefinedSounds.map((uri, index) => (

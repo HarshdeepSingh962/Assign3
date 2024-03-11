@@ -58,6 +58,5 @@ export const Styles = StyleSheet.create({
   spacing: {
     marginBottom: 20,
   },
-  instructions:{
-  },
+  
 });

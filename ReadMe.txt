@@ -1,4 +1,4 @@
-Sound Recorder App
+Sound Board App
 This is a simple React Native application for recording sounds and managing them.
 
 Dependencies
